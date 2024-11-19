@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textView3" type="id" />
+    <item name="separatorView" type="id" />
+    <item name="btn_pub" type="id" />
+    <item name="card" type="id" />
+    <item name="recyclerView" type="id" />
+    <item name="searchview" type="id" />
+</resources>

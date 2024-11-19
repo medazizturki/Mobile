@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/image">
+
+    <!-- Back Arrow -->
+    <ImageView
+        android:id="@+id/back_arrow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Back"
+        android:padding="4dp"
+        android:src="@drawable/retour" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="-50dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Add Participant"
+        android:textColor="#074207"
+        android:textSize="27sp" />
+
+    <!-- Separator View -->
+    <View
+        android:id="@+id/separatorView"
+        android:layout_width="40dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/light_bg"
+        android:backgroundTint="#074207" />
+
+    <!-- Participant Fields and Submit Button -->
+    <EditText
+        android:id="@+id/nomequipe"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/light_bg"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="Nomequipe"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColor="@color/black" />
+
+
+    <EditText
+        android:id="@+id/leadername"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/light_bg"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="   Leader Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/nombremembres"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/light_bg"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="  Number of Members"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Participation"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#074207"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/poppins_semibold" />
+
+</LinearLayout>
