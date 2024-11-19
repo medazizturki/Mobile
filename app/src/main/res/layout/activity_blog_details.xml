@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+    android:fillViewport="true"> <!-- Set background image here -->
+
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Back"
+            android:padding="4dp"
+            android:src="@drawable/retour" />
+
+
+        <!-- Blog Image -->
+
+        <!-- Blog Title -->
+        <ImageView
+            android:id="@+id/blog_details_image"
+            android:layout_width="match_parent"
+            android:layout_height="199dp"
+            android:layout_marginTop="-16dp"
+            android:contentDescription="Blog Image"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/blog_details_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Tournamant Title"
+            android:textColor="#074207"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Blog Author -->
+        <TextView
+            android:id="@+id/blog_details_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Price"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <!-- Blog Description -->
+        <TextView
+            android:id="@+id/blog_details_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Tournemant Description"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_participate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#074207"
+            android:gravity="center"
+            android:text="Participate"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+    </LinearLayout>
+</ScrollView>

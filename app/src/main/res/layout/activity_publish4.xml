@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/backArrowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:contentDescription="Back"
+        android:src="@drawable/retour" />
+    <!-- TextView for the title -->
+
+    <!-- View acting as a separator -->
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="-30dp"
+        android:text="Publish Card"
+        android:textColor="#074207"
+        android:textSize="27sp" />
+
+    <View
+        android:id="@+id/separatorView"
+        android:layout_width="40dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/light_bg"
+        android:backgroundTint="@color/dark_black" />
+
+    <!-- CardView for content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/stroke_bg"
+            app:cardCornerRadius="18dp">
+
+            <ImageView
+                android:id="@+id/image_tmb"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_margin="15dp"
+                android:scaleType="centerCrop"
+                android:visibility="invisible"
+                tools:src="@tools:sample/backgrounds/scenic" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:background="@drawable/stroke_bg" />
+
+            <Button
+                android:id="@+id/b_selectimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#074207"
+                android:gravity="center"
+                android:text="Select an image!!"
+                android:textColor="#FAFAFA"
+                android:textSize="21sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/b_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/light_bg"
+            android:ems="10"
+            android:hint="Title"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/btn_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/light_bg"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="CODE"
+            android:inputType="textPersonName"
+            android:minHeight="150dp"
+            android:padding="15dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/btn_auth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/light_bg"
+            android:ems="10"
+            android:hint="Amount"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textColor="@color/black" />
+
+        <!-- Change TextView to Button -->
+        <Button
+            android:id="@+id/btn_pub"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#074207"
+            android:gravity="center"
+            android:text="PUBLISH"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+    </LinearLayout>
+</LinearLayout>

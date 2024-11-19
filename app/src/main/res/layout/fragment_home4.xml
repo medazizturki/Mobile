@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+    tools:context=".Home4">
+
+    <ImageView
+        android:id="@+id/backArrowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:contentDescription="Back"
+        android:src="@drawable/retour" />
+
+
+
+
+    <!-- TextView for the title -->
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="85dp"
+        android:layout_toStartOf="@+id/button_plus"
+        android:layout_toEndOf="@+id/backArrowButton"
+        android:text="Cards"
+        android:textColor="#074207"
+        android:textSize="27sp" />
+
+    <ImageButton
+        android:id="@+id/button_plus"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="Add"
+        android:src="@drawable/plus"
+        android:scaleType="fitCenter"
+        android:padding="8dp" />
+
+    <!-- View acting as a separator -->
+    <View
+        android:id="@+id/separatorView"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="8dp"
+        android:background="#074207" /> <!-- Ensure orange exists in res/colors.xml -->
+
+
+
+    <!-- RecyclerView for displaying a list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/textView3"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="14dp"
+        tools:listitem="@layout/row6" />
+
+
+</RelativeLayout>

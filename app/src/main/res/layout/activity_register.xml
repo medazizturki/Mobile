@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:minHeight="48dp"
+        android:minWidth="350dp"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:minWidth="350dp"
+        android:autofillHints="password" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:minWidth="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/register" />
+
+    <!-- Sign In TextView -->
+    <TextView
+        android:id="@+id/signInTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Already have an account? Sign In"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+</LinearLayout>

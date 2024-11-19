@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TextView for the title -->
+    <TextView
+        android:id="@+id/userTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="USER 1"
+        android:textColor="#65047C"
+        android:textSize="27sp" />
+
+    <!-- TextView for credits display -->
+    <TextView
+        android:id="@+id/creditsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Credits: 0"
+        android:textColor="#65047C"
+        android:textSize="27sp" />
+
+    <!-- View acting as a separator -->
+    <View
+        android:id="@+id/separatorView"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/userTextView"
+        android:layout_marginTop="8dp"
+        android:background="#65047C" />
+
+    <!-- Button to open redeem form -->
+    <Button
+        android:id="@+id/redeemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separatorView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Redeem Card" />
+
+
+    <Button
+        android:id="@+id/BackOfficeButton"
+        android:layout_width="92dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="40dp"
+        android:text="Back" />
+
+
+</RelativeLayout>

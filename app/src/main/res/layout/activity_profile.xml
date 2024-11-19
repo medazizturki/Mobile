@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Name -->
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: John Doe"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:visibility="gone"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Surname -->
+    <TextView
+        android:id="@+id/profileSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Surname: Doe"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editProfileSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Surname"
+        android:visibility="gone"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Phone -->
+    <TextView
+        android:id="@+id/profilePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: 123-456-7890"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editProfilePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone"
+        android:visibility="gone"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:visibility="gone"/>
+</LinearLayout>
